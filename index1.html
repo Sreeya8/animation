@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+
+        .cls{
+          padding-left: 20%;
+        }
+        .cls button{
+          background-color: gray;
+          padding:1% 4%;
+          margin-left:5%;
+          margin-top: 2%;
+          color:white
+
+        }
+        .cls button:hover{
+          background-color: rgb(166, 158, 158);
+          
+        }
+        
+        .cls1:hover~img{
+            transform: translate(50px,50px);
+            transition-duration: 4s;
+            
+        }
+        .cls2:hover~img{
+            transform: rotate(90deg );
+            transition-duration: 4s;
+        }
+        .cls3:hover~img{
+            transform: scale(0.7);
+            transition-duration: 4s;
+        }
+        .cls4:hover~img{
+            transform: skew(10deg,10deg);
+            transition-duration: 4s;
+        }
+        .cls img{
+          
+          padding-top: 5%;
+          padding-left: 20%;
+          width: 30%;
+          height: 60vh;
+          
+        }
+        
+
+          
+        
+              
+
+    </style>
+</head>
+<body>
+    
+    <div class="cls">
+        <button class="cls1">Translate</button>
+        <button class="cls2">Rotate</button>
+        <button class="cls3">Scale</button>
+        <button class="cls4">Skew</button><br>
+        <img src="img.jpg">
+    </div>
+</body>
+</html>
